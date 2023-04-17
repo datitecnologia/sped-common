@@ -135,7 +135,7 @@ class Strings
         //Multiple spaces is not acceptable in strings
         $input = preg_replace('/(?:\s\s+)/', ' ', $input);
         //Only UTF-8 characters is acceptable
-        $input = Encoding::fixUTF8($input);
+        //$input = Encoding::fixUTF8($input);
         $input = preg_replace(
             '/[\x00-\x08\x10\x0B\x0C\x0E-\x19\x7F]' .
                 '|[\x00-\x7F][\x80-\xBF]+' .
